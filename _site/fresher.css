@@ -52,16 +52,18 @@ body {
   font-family: helvetica, arial, sans;
 }
 /* THE TOP TAPS */
-  .my_own_stuff {;margin: 0 auto;text-align: center;}
+  .my_own_stuff {
+    margin: 0 auto;
+    text-align: center;
+  }
   .my_own_stuff a {display: inline-block;
-                   background: #ffffff;
                    box-sizing: border-box;
                    padding: 4px;
                    border-radius: 10px;
                    margin: 5px 2px;
-                   color: black;
+                   color: rgba(255, 255, 255, 0.6);
                    font-family: arial, helvetica, sans ;
-                   font-size: 1rem;
+                   font-size: 2vw;
                    font-weight: bold;
                    text-decoration: none;
                    }
@@ -100,6 +102,25 @@ body {
   .full_hero {
     background-color: #dddddd;
     display: block;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 10vh;
+  }
+  .hero_home {
+    background-image: url(https://res.cloudinary.com/dodevsdjg/image/upload/v1752027789/Swear1_dmpdyq.png);
+    /* background-size: contain; */
+    background-position: center top;
+  }
+  .fullhero_content {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(0, 50%,);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2vw;
+  }
+  .fullhero_content a {
+    margin-top: 1em;
   }
 /* HEADER STYLES */
 .header {
@@ -144,7 +165,7 @@ body {
     position: absolute;
     width: 60px;
     transform: translateX(-50%, 50%);
-    left:  50%;
+    left:  46%;
   }
 .header-logo:hover,
 .header-logo:active {
