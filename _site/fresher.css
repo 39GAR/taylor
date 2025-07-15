@@ -51,6 +51,9 @@ body  {
 body {
   font-family: helvetica, arial, sans;
 }
+p {
+  line-height: 1.5;
+}
 /* THE TOP TAPS */
   .my_own_stuff {
     margin: 0 auto;
@@ -107,8 +110,8 @@ body {
     padding-top: 10vh;
   }
   .hero_home {
-    background-image: url(https://res.cloudinary.com/dodevsdjg/image/upload/v1752027789/Swear1_dmpdyq.png);
-    /* background-size: contain; */
+    background-image: url(https://res.cloudinary.com/dodevsdjg/image/upload/c_crop,w_1000,h_563,ar_16:9/v1752296905/Swear5_s7nfol.jpg);
+    background-size: contain;
     background-position: center top;
   }
   .fullhero_content {
@@ -119,6 +122,25 @@ body {
     color: rgba(255, 255, 255, 0.6);
     font-size: 2vw;
   }
+  .fullhero_content:after {
+    border: 20px solid;
+    border-color: rgba(255, 255, 255, 0.6) transparent transparent ;
+    bottom: -35vh;
+    height: 0;
+    content: "";
+    position: absolute;
+    font-size: 30px;
+    left:49%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      transform: translate(0, -50);
+    width:  0;
+  }
+  /* .fullhero_content a:before {
+   color: blue;
+   content: "A";
+  }
+  .fullhero_content a:After {
+   color: Green;
+   content: "B";
+  } */
   .fullhero_content a {
     margin-top: 1em;
   }
@@ -174,19 +196,55 @@ body {
   /* TABLE_ISSUES */
   .My_tables {border: 4px solid black ;text-align: center}
   .Table_again {overflow: visible;}
-  .the_header { display: block ; border: 4px solid black; text-align: center; width: 397px; margin: 0 auto; margin-top: 10px}
+  .the_header {
+    display: block ;
+    border: 4px solid black;
+    text-align: center;
+    width: 397px;
+    margin: 0 auto;
+    margin-top: 10px
+  }
+
+/* HOME PAGE STYLES */
+.home_sections {
+  display: block;
+  margin: 6rem auto;
+  background: blue;
+  width: 90vw;
+  max-width: 980px;
+}
+.home_callout {
+  background-color: black;
+  color: white;
+  padding: 7vh 0;
+}
+.callout_title {
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+}
+.callout_copy {
+  font-size: 0.8rem;
+}
   /* Bioboxes */
   .bio_wrapper {font-size: 24px; overflow: hidden; margin:auto; max-width: 960px}
   .boi_box {
            box-sizing: border-box;
-           border: 1px solid black;
+           /* border: 1px solid black; */
            font-size: 1rem;
-           margin:  1%;
+           margin:6rem 0 0 ;
            max-width:23%;
            float: left;
-           padding: 1%;
+           padding: 0 3%;
            border-radius: 10px
          }
+   .boi_box h2 {
+     text-transform: uppercase;
+   }
+   .bio_copy{
+    font-size: 0.75em;
+
+   }
    .boi_box img {width: 100%; border-radius: 10px }
    .boi_box p { margin: 5px; line-height: 1.5}
    .bio_cat {margin: -40px 0 1em 0; text-align: center; color: white }
